@@ -6,6 +6,7 @@
 				<ul>
 					<li><a class="twitter" href="http://twitter.com/tommy_pyatt/" target="_blank" title="Twitter"></a></li>
 					<li><a class="github" href="https://github.com/tommypyatt" target="_blank" title="Github"></a></li>
+					<li><a class="flickr" href="http://www.flickr.com/photos/tommypyatt/" target="_blank" title="Flickr"></a></li>
 				</ul>
 			</div>
 			<?php /* <div class="info">Like this blog? <a href="https://github.com/tommypyatt/my-blog" target="_blank">Take it</a>, it's yours.</div> */ ?>

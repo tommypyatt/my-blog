@@ -432,6 +432,9 @@ aside ul li a{
 #page-footer .github{
 	background: url("images/icons/Github.png") no-repeat 0 0 transparent;
 }
+#page-footer .flickr{
+	background: url("images/icons/Flickr.png") no-repeat 0 0 transparent;
+}
 
 /*wp stuff*/
 
