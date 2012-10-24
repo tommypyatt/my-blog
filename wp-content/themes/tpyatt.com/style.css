@@ -1,0 +1,563 @@
+/*   
+Theme Name: WordPress theme for personal blog
+Theme URI: http://tpyatt.com
+Author: Tommy Pyatt
+Author URI: http://tpyatt.com
+Version: 0.1
+*/
+
+/*
+	HTML5 Reset Wordpress Theme :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+	
+	Eric Meyer					:: http://ericmeyer.com
+	HTML5 Doctor				:: http://html5doctor.com
+	and the HTML5 Boilerplate	:: http://html5boilerplate.com
+	
+	Special thanks: The Wordpress theme owes its start to an empty theme authored 
+		by Chris Coyier & Jeff Starr: http://digwp.com
+	
+-------------------------------------------------------------------------------*/
+
+@font-face {
+	font-family: 'Russo One';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Russo One'), local('RussoOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/russoone/v1/RO6e96EC9m6OLO0tr7J3zz8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Marcellus';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Marcellus'), local('Marcellus-Regular'), url(http://themes.googleusercontent.com/static/fonts/marcellus/v1/FJNab1jzp1t7ctjNl8ugHD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+#brand,
+#brand h1,
+.entry-title,
+#content-main-wrap h2,
+aside h2{
+	font-family: 'Russo One', Arial,sans-serif;
+	font-weight: normal;
+}
+
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}									
+
+article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites, like, say for Google Maps custom placemarkers. 
+   There has been a report of problems with standard Google maps as well, but we haven't been able to duplicate or diagnose the issue. */
+img,
+object,
+embed {max-width: 100%;}
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {overflow-y: scroll;}
+
+/* we use a lot of ULs that aren't bulleted. 
+	don't forget to restore the bullets within content. */
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+/* tables still need cellspacing="0" in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+pre {
+	white-space: pre; /* CSS2 */
+	white-space: pre-wrap; /* CSS 2.1 */
+	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+	word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom; *vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 99% sans-serif;}
+
+table {font-size: inherit; font: 100%;}
+ 
+/* Accessible focus treatment
+	people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active {outline: none;}
+
+small {font-size: 85%;}
+
+strong, th {font-weight: bold;}
+
+td, td img {vertical-align: top;} 
+
+/* Make sure sup and sub don't screw with your line-heights
+	gist.github.com/413930 */
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+/* hand cursor on clickable elements */
+.clickable,
+label, 
+input[type=button], 
+input[type=submit], 
+button {cursor: pointer;}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {margin: 0;}
+
+/* make buttons play nice in IE */
+button {width: auto; overflow: visible;}
+ 
+/* scale images in IE7 more attractively */
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+/* prevent BG image flicker upon hover */
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; }  
+
+
+
+/* Ok, this is where the fun starts.
+-------------------------------------------------------------------------------*/
+
+/* new Linux- and Windows-friendly sans-serif font stack: http://mky.be/fontstack */
+body {font: 13px Helmet, Freesans, sans-serif;}
+
+/* using local fonts? make sure to read up on Paul Irish's 
+	Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
+
+/* we like off-black for text */
+
+/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #3E8B41; color: #fff; text-shadow: none;}
+::selection {background: #3E8B41; color: #fff; text-shadow: none;} 
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #3E8B41;} 
+
+ins {background-color: #3E8B41; color: #fff; text-decoration: none;}
+mark {background-color: #3E8B41; color: #fff; font-style: italic; font-weight: bold;}
+
+
+
+/* And here begins the Wordpress fun.
+-------------------------------------------------------------------------------*/
+
+html{
+	height: 100%;
+	background: #1F1F1F;
+}
+body{
+	font-family: 'Marcellus', Arial,sans-serif;
+	background: #F9F9F9;
+	font-size: 14px;
+	color: #3B3B3B;
+	width: 100%;
+	overflow-x: hidden;
+	position: relative;
+}
+#wpstats{
+	position: absolute;top:-9999px;
+}
+p{
+	line-height: 28px;
+	margin: 0 0 18px;
+}
+a{
+	color: #088D0D;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+}
+a:hover{
+	color: #B30E0A;
+}
+#page-wrap{
+	width: 960px;
+	margin: 0 auto;
+	background: url("images/sci-fi-bg.png") no-repeat right 0 transparent;
+}
+#page-head{
+	position: relative;
+	height: 146px;
+	background: transparent;
+}
+#top-bar{
+	background: #1f1f1f;
+	height: 30px;
+	padding: 0 999px;
+	margin: 0 -999px;
+	box-shadow: #4D4D4D 0 0px 6px;
+	position: relative;
+	z-index: 2;
+}
+.inner{
+    width: 960px;
+    margin: 0 auto;
+}
+#top-nav li{
+	float: left;
+	list-style: none;
+	height: 30px;
+}
+#top-nav li a{
+	height: 100%;
+	line-height: 28px;
+	padding: 0 18px;
+}
+#top-nav li a,
+#bottom-nav li a{
+	display: block;
+	color: #B3B3B3;
+	text-decoration: none;
+}
+#top-nav li a:hover{
+	background: #3b3b3b;
+	color: #fff;
+}
+.search-bar{
+    float: right;
+    padding: 3px 0 0;
+    margin-right: 10px;
+}
+.search-bar input:focus{
+	outline: none;
+}
+.search-bar input{
+	background: url("images/search-glass.png") right 2px no-repeat #CFCFCF;
+	border: none;
+	height: 24px;
+	width: 220px;
+	border-radius: 11px;
+	padding: 0 26px 0 11px;
+	border-top-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+#bottom-bar{
+	height: 35px;
+}
+#bottom-bar .menu{
+	height: 34px;
+	border-bottom: #088D0D 1px solid;
+}
+#bottom-bar .menu li{
+	float: left;
+	height: 100%;
+}
+#bottom-bar .menu li a{
+	height: 29px;
+	margin: 6px 8px 0 0;
+	line-height: 28px;
+	padding: 0 10px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 8px;
+	color: #1f1f1f;
+	display: block;
+	text-decoration: none;
+}
+#bottom-bar .menu li a:hover,
+#bottom-bar .menu li.hover a,
+#bottom-bar .menu li.current-menu-item a{
+	background: #3B3B3B;
+	color: #fff;
+}
+#bottom-bar .menu ul.sub-menu{
+	position: absolute;
+	display: none;
+}
+#bottom-bar .menu ul.sub-menu li{
+	background: #3b3b3b;
+	float: none;
+	clear: both;
+	height: 30px;
+}
+#bottom-bar .menu ul.sub-menu li a:hover{
+	background: #1f1f1f;
+}
+#bottom-bar .menu ul.sub-menu li a{
+	margin: 0;
+	height: 30px;
+	padding: 2px 18px;
+	border-radius: 0;
+	line-height: 30px;
+}
+#brand{
+    height: 111px;
+    position: relative;
+}
+#brand h1{
+	font-size: 22px;
+	margin: 0 0 8px;
+	position: absolute;
+	top: 26px;
+	left: 20px;
+}
+#brand h1 a{
+	text-decoration: none;
+}
+#brand p{
+	font-size: 16px;
+	position: absolute;
+	top: 53px;
+	left: 20px;
+}
+#content-main-wrap{
+    background: #fff;
+    width: 650px;
+    padding: 22px 17px 30px;
+    margin: 15px 0 45px;
+    border: #DCDCD9 1px solid;
+    float: left;
+}
+.entry-title{
+    font-size: 25px;
+    border-bottom: #088D0D 1px solid;
+    padding: 0 0 8px;
+    margin: 0 0 15px;
+}
+#content-main-wrap h2{
+	font-size: 20px;
+    border-bottom: #088D0D 1px solid;
+    padding: 0 0 8px;
+    margin: 0 0 15px;
+}
+#content-main-wrap h2.archive-title{
+    border: none;
+    margin: 0;
+}
+.entry-title a,
+#content-main-wrap h2 a{
+	text-decoration: none;
+}
+aside{
+    float: right;
+    margin: 15px 0 0;
+    width: 252px;
+}
+aside h2{
+    font-size: 20px;
+    border-bottom: #088D0D 1px solid;
+    padding: 0 0 6px;
+    margin: 0 0 15px;
+    line-height: 26px;
+}
+aside .widget{
+    background: #fff;
+    padding: 22px 17px 15px;
+    border: #DCDCD9 1px solid;
+    margin: 0 0 26px;
+}
+aside ul li{
+    line-height: 20px;
+	list-style: square;
+    margin: 0 0 10px 17px;
+}
+aside .widget_twitter ul li{
+    margin-bottom: 18px;
+}
+aside ul li a{
+	text-decoration: underline;
+}
+#page-footer{
+	background: #1F1F1F;
+	color: #B3B3B3;
+	clear: both;
+	height: 80px;
+}
+.footer-inner{
+	padding: 15px 0 25px;
+}
+#page-footer a{
+	color: #B3B3B3;
+}
+#page-footer a:hover{
+	color: #fff;
+}
+#page-footer .info{
+	float: right;
+	font-size: 12px;
+}
+#page-footer .social-icons li{
+	float: left;
+	height: 33px;
+	width: 33px;
+	margin-right: 8px;
+}
+#page-footer .social-icons li a{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+#page-footer .twitter{
+	background: url("images/icons/Twitter.png") no-repeat 0 0 transparent;
+}
+#page-footer .github{
+	background: url("images/icons/Github.png") no-repeat 0 0 transparent;
+}
+
+/*wp stuff*/
+
+article{
+	clear: both;
+}
+
+footer{
+    color: #888888;
+    font-size: 12px;
+    margin: 0 0 6px;
+}
+
+.navigation{
+	margin: 20px 0 0;
+	font-size: 12px;
+}
+.navigation .next-posts{
+    float: left;
+}
+.navigation .prev-posts{
+    float: right;
+}
+.meta-top .navigation{
+	margin: 0;
+	padding: 2px 0 32px;
+}
+.post-edit-link{
+    float: right;
+    font-size: 12px;
+}
+.comment{
+	margin-left: 30px;
+}
+.comment-meta,
+.logged-in-as{
+	font-size: 12px;
+}
+#commentform input[type="text"]{
+	width: 384px;
+	border: #A8D6AA 1px solid;
+	float: left;
+	margin: 0 0 9px;
+}
+#commentform input[type="submit"]{
+	margin: 5px 0 15px 241px;
+	background: #A8D6AA;
+	border: none;
+	padding: 5px;
+	width: 145px;
+}
+.comment-subscription-form{
+	clear: both;
+}
+#commentform input[type="checkbox"]{
+	float: left;
+	margin: 9px 0 0;
+}
+#commentform label{
+	float: left;
+	font-size: 12px;
+	margin: 2px 0 0 8px;
+}
+#commentform textarea{
+	width: 380px;
+	border: #A8D6AA 1px solid;
+	max-width: 380px;
+}
+
+/*contact form plugin styles*/
+#cntctfrm_contact_form label{
+	font-size: 12px;
+}
+#cntctfrm_contact_form input[type="text"]{
+	width: 384px;
+	border: #A8D6AA 1px solid;
+	margin: 0 0 9px;
+}
+#cntctfrm_contact_form textarea{
+	width: 320px;
+	border: #A8D6AA 1px solid;
+	max-width: 320px;
+}
+#cntctfrm_contact_form input[type="submit"]{
+	background: #A8D6AA;
+	border: none;
+	padding: 5px;
+	width: 145px;
+}
+
+img.alignleft{
+	float: left;
+	border: #3B3B3B 1px solid;
+	padding: 1px;
+	margin: 0 15px 5px 0;
+}
+img.alignright{
+	float: left;
+	border: #3B3B3B 1px solid;
+	padding: 1px;
+	margin: 0 0 5px 15px;
+}
+
+
+/* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+
+
+
+}
+
+
+/* Media queries!
+-------------------------------------------------------------------------------*/
+
+/* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-device-width: 480px) {
+	
+		
+}
+
+@media all and (orientation: portrait) {
+	
+}
+
+@media all and (orientation: landscape) {
+	
+}
