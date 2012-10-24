@@ -107,9 +107,7 @@
 <body>
 	<div id="top-bar">
 		<div class="inner">
-		<ul id="top-nav">
-			<?php wp_list_pages('title_li='); ?>
-		</ul>
+		<?php wp_nav_menu(array('menu' => 'Top Navigation' )); ?>
 		<div class="search-bar">
 			<?php get_search_form( $echo ); ?>
 		</div>
@@ -122,7 +120,7 @@
 				<p class="description"><?php bloginfo('description'); ?></p>
 			</div>
 			<div id="bottom-bar">
-				<?php wp_nav_menu(); ?>
+				<?php wp_nav_menu(array('menu' => 'Lower Navigation' )); ?>
 				<script type="text/javascript">
 					$('#bottom-bar .menu li').hover(function(){
 						$(this).addClass('hover');

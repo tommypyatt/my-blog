@@ -233,23 +233,23 @@ a:hover{
     width: 960px;
     margin: 0 auto;
 }
-#top-nav li{
+#menu-top-navigation li{
 	float: left;
 	list-style: none;
 	height: 30px;
 }
-#top-nav li a{
+#menu-top-navigation li a{
 	height: 100%;
 	line-height: 28px;
 	padding: 0 18px;
 }
-#top-nav li a,
+#menu-top-navigation li a,
 #bottom-nav li a{
 	display: block;
 	color: #B3B3B3;
 	text-decoration: none;
 }
-#top-nav li a:hover{
+#menu-top-navigation li a:hover{
 	background: #3b3b3b;
 	color: #fff;
 }

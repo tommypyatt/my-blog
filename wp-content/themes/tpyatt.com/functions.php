@@ -44,6 +44,7 @@
     
     add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'audio', 'chat', 'video')); // Add 3.1 post format theme support.
 	
-	register_nav_menu( 'primary', 'Primary Menu' );
+	register_nav_menu( 'top', 'Top Navigation' );
+	register_nav_menu( 'lower', 'Lower Navigation' );
 
 ?>
