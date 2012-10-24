@@ -5,7 +5,7 @@
 			<div class="social-icons">
 				<ul>
 					<li><a class="twitter" href="http://twitter.com/tommy_pyatt/" target="_blank" title="Twitter"></a></li>
-					<li><a class="github" href="https://github.com/tommypyatt" target="_blank" title="Github"></a></li>
+					<li><a class="github" href="https://github.com/tommypyatt" target="_blank" title="GitHub"></a></li>
 					<li><a class="flickr" href="http://www.flickr.com/photos/tommypyatt/" target="_blank" title="Flickr"></a></li>
 				</ul>
 			</div>
