@@ -347,6 +347,10 @@ a:hover{
     border: #DCDCD9 1px solid;
     float: left;
 }
+#content-main-wrap article{
+    margin: 0 0 36px;
+    
+}
 .entry-title{
     font-size: 25px;
     border-bottom: #088D0D 1px solid;
