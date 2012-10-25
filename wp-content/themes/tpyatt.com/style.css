@@ -385,6 +385,11 @@ aside .widget{
     border: #DCDCD9 1px solid;
     margin: 0 0 26px;
 }
+aside .tagcloud,
+.post-tags{
+    text-transform: lowercase;
+    
+}
 aside ul li{
     line-height: 20px;
 	list-style: square;

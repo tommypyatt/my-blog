@@ -14,7 +14,7 @@
 
 				<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
 				
-				<?php the_tags( 'Tags: ', ', ', ''); ?>
+				<?php the_tags('Tags: <span class="post-tags">', ', ', '</span><br />'); ?>
 			
 				<div class="meta-bottom">
 					<?php include (TEMPLATEPATH . '/_/inc/nav.php' ); ?>
