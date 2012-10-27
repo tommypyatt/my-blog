@@ -383,6 +383,9 @@ aside h2{
     margin: 0 0 15px;
     line-height: 26px;
 }
+aside h2 a{
+    text-decoration: none;
+}
 aside .widget{
     background: #fff;
     padding: 22px 17px 15px;
