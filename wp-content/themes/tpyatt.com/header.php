@@ -59,15 +59,14 @@
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 	
 	<meta name="google-site-verification" content="">
-	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
 	
-	<meta name="author" content="Your Name Here">
-	<meta name="Copyright" content="Copyright Your Name Here 2011. All Rights Reserved.">
+	<meta name="author" content="Tommy Pyatt">
+	<meta name="Copyright" content="Copyright Tommy Pyatt 2012. All Rights Reserved.">
 
 	<!-- Dublin Core Metadata : http://dublincore.org/ -->
-	<meta name="DC.title" content="Project Name">
-	<meta name="DC.subject" content="What you're about.">
-	<meta name="DC.creator" content="Who made this site.">
+	<meta name="DC.title" content="Tommy Pyatt">
+	<meta name="DC.subject" content="Just another front-end web developer">
+	<meta name="DC.creator" content="Tommy Pyatt">
 	
 	<!--  Mobile Viewport meta tag
 	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
