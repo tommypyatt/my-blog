@@ -274,8 +274,6 @@ p{
 	margin: 6px 8px 0 0;
 	line-height: 28px;
 	padding: 0 10px;
-	border-top-left-radius: 0px;
-	border-top-right-radius: 8px;
 	color: #1f1f1f;
 	display: block;
 	text-decoration: none;
@@ -283,8 +281,9 @@ p{
 #bottom-bar .menu li a:hover,
 #bottom-bar .menu li.hover a,
 #bottom-bar .menu li.current-menu-item a{
-	background: #3B3B3B;
-	color: #fff;
+	background: rgb(240, 240, 240);
+	margin-top: 0;
+	height: 34px;
 }
 #bottom-bar .menu ul.sub-menu{
 	position: absolute;
