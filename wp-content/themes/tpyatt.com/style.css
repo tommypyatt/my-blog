@@ -472,6 +472,9 @@ footer{
 .logged-in-as{
 	font-size: 12px;
 }
+.comment-meta{
+    margin: 4px 0 10px;
+}
 #commentform input[type="text"]{
 	width: 384px;
 	border: #A8D6AA 1px solid;
