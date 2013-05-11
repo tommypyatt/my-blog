@@ -195,7 +195,7 @@ p{
 	-ms-transition: all 0.4s ease;
 	-o-transition: all 0.4s ease;
 }
-a:hover{
+#page-wrap a:hover{
 	color: #B30E0A;
 }
 #page-wrap{
