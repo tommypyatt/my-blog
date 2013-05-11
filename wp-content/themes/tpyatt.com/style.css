@@ -20,26 +20,12 @@ Version: 0.1
 	
 -------------------------------------------------------------------------------*/
 
-@font-face {
-	font-family: 'Russo One';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Russo One'), local('RussoOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/russoone/v1/RO6e96EC9m6OLO0tr7J3zz8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'Marcellus';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Marcellus'), local('Marcellus-Regular'), url(http://themes.googleusercontent.com/static/fonts/marcellus/v1/FJNab1jzp1t7ctjNl8ugHD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
-}
-
 #brand,
 #brand h1,
 .entry-title,
 #content-main-wrap h2,
 aside h2{
-	font-family: 'Russo One', Arial,sans-serif;
+	font-family: 'PT Serif', Arial,sans-serif;
 	font-weight: normal;
 }
 
