@@ -186,7 +186,9 @@ p{
 	line-height: 28px;
 	margin: 0 0 18px;
 }
-body a{
+#top-bar a,
+#page-wrap a,
+#page-footer a{
 	color: #088D0D;
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
