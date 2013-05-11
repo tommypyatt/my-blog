@@ -186,7 +186,7 @@ p{
 	line-height: 28px;
 	margin: 0 0 18px;
 }
-a{
+body a{
 	color: #088D0D;
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
