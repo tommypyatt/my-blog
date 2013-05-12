@@ -189,7 +189,7 @@ p{
 #top-bar a,
 #page-wrap a,
 #page-footer a{
-	color: #088D0D;
+	color: rgb(8, 23, 133);
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
 	-ms-transition: all 0.4s ease;
@@ -264,7 +264,7 @@ p{
 }
 #bottom-bar .menu{
 	height: 34px;
-	border-bottom: #088D0D 1px solid;
+	border-bottom: rgb(8, 23, 133) 1px solid;
 }
 #bottom-bar .menu li{
 	float: left;
@@ -340,13 +340,13 @@ p{
 }
 .entry-title{
     font-size: 25px;
-    border-bottom: #088D0D 1px solid;
+    border-bottom: rgb(8, 23, 133) 1px solid;
     padding: 0 0 8px;
     margin: 0 0 15px;
 }
 #content-main-wrap h2{
 	font-size: 20px;
-    border-bottom: #088D0D 1px solid;
+    border-bottom: rgb(8, 23, 133) 1px solid;
     padding: 0 0 8px;
     margin: 0 0 15px;
 }
@@ -365,7 +365,7 @@ aside{
 }
 aside h2{
     font-size: 20px;
-    border-bottom: #088D0D 1px solid;
+    border-bottom: rgb(8, 23, 133) 1px solid;
     padding: 0 0 6px;
     margin: 0 0 15px;
     line-height: 26px;
