@@ -201,6 +201,7 @@ p{
 #page-wrap{
 	width: 960px;
 	margin: 0 auto;
+	background: url("images/ripple.png") 627px -58px no-repeat transparent;
 }
 #page-head{
 	position: relative;
