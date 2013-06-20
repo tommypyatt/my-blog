@@ -468,6 +468,9 @@ footer{
 .comment{
 	margin-left: 30px;
 }
+.comment-body{
+    margin: 0 0 16px;
+}
 .comment-meta,
 .logged-in-as{
 	font-size: 12px;
