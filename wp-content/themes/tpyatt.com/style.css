@@ -350,6 +350,9 @@ p{
     padding: 0 0 8px;
     margin: 0 0 15px;
 }
+#content-main-wrap h2.search-header{
+    margin: 0 0 50px;
+}
 #content-main-wrap h2.archive-title{
     border: none;
     margin: 0;
