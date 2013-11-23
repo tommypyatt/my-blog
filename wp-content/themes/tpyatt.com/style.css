@@ -363,6 +363,15 @@ aside{
     margin: 15px 0 0;
     width: 252px;
 }
+aside .search-input{
+    border: rgb(8, 23, 133) 1px solid;	
+    padding: 3px 6px;
+    width: 100%;
+    margin-top: -10px;
+}
+aside .search-label{
+    display: none;
+}
 aside h2{
     font-size: 20px;
     border-bottom: rgb(8, 23, 133) 1px solid;
